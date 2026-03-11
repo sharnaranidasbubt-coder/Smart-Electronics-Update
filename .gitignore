@@ -1,0 +1,32 @@
+# WordPress Core (don't track - too many files)
+app/public/wp-admin/
+app/public/wp-includes/
+app/public/index.php
+app/public/license.txt
+app/public/readme.html
+app/public/wp-*.php
+app/public/xmlrpc.php
+!app/public/wp-config.php
+
+# Uploads and cache
+app/public/wp-content/uploads/
+app/public/wp-content/upgrade/
+app/public/wp-content/cache/
+
+# Logs
+logs/
+
+# Config templates
+conf/
+
+# SQL files
+app/sql/
+
+# OS files
+.DS_Store
+Thumbs.db
+*.log
+
+# IDE
+.vscode/
+.idea/
