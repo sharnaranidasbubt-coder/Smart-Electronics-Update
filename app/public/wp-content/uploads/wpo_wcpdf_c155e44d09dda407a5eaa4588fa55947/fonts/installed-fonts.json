@@ -1,0 +1,26 @@
+{
+    "open sans": {
+        "normal": "\/home\/unisoft\/Local Sites\/smart-elctronics-ltd\/app\/public\/wp-content\/uploads\/wpo_wcpdf_c155e44d09dda407a5eaa4588fa55947\/fonts\/OpenSans-Normal",
+        "bold": "\/home\/unisoft\/Local Sites\/smart-elctronics-ltd\/app\/public\/wp-content\/uploads\/wpo_wcpdf_c155e44d09dda407a5eaa4588fa55947\/fonts\/OpenSans-Bold",
+        "italic": "\/home\/unisoft\/Local Sites\/smart-elctronics-ltd\/app\/public\/wp-content\/uploads\/wpo_wcpdf_c155e44d09dda407a5eaa4588fa55947\/fonts\/OpenSans-Italic",
+        "bold_italic": "\/home\/unisoft\/Local Sites\/smart-elctronics-ltd\/app\/public\/wp-content\/uploads\/wpo_wcpdf_c155e44d09dda407a5eaa4588fa55947\/fonts\/OpenSans-BoldItalic"
+    },
+    "segoe": {
+        "normal": "\/home\/unisoft\/Local Sites\/smart-elctronics-ltd\/app\/public\/wp-content\/uploads\/wpo_wcpdf_c155e44d09dda407a5eaa4588fa55947\/fonts\/Segoe-Normal",
+        "bold": "\/home\/unisoft\/Local Sites\/smart-elctronics-ltd\/app\/public\/wp-content\/uploads\/wpo_wcpdf_c155e44d09dda407a5eaa4588fa55947\/fonts\/Segoe-Bold",
+        "italic": "\/home\/unisoft\/Local Sites\/smart-elctronics-ltd\/app\/public\/wp-content\/uploads\/wpo_wcpdf_c155e44d09dda407a5eaa4588fa55947\/fonts\/Segoe-Italic",
+        "bold_italic": "\/home\/unisoft\/Local Sites\/smart-elctronics-ltd\/app\/public\/wp-content\/uploads\/wpo_wcpdf_c155e44d09dda407a5eaa4588fa55947\/fonts\/Segoe-BoldItalic"
+    },
+    "roboto slab": {
+        "normal": "\/home\/unisoft\/Local Sites\/smart-elctronics-ltd\/app\/public\/wp-content\/uploads\/wpo_wcpdf_c155e44d09dda407a5eaa4588fa55947\/fonts\/RobotoSlab-Normal",
+        "bold": "\/home\/unisoft\/Local Sites\/smart-elctronics-ltd\/app\/public\/wp-content\/uploads\/wpo_wcpdf_c155e44d09dda407a5eaa4588fa55947\/fonts\/RobotoSlab-Bold",
+        "italic": "\/home\/unisoft\/Local Sites\/smart-elctronics-ltd\/app\/public\/wp-content\/uploads\/wpo_wcpdf_c155e44d09dda407a5eaa4588fa55947\/fonts\/RobotoSlab-Italic",
+        "bold_italic": "\/home\/unisoft\/Local Sites\/smart-elctronics-ltd\/app\/public\/wp-content\/uploads\/wpo_wcpdf_c155e44d09dda407a5eaa4588fa55947\/fonts\/RobotoSlab-BoldItalic"
+    },
+    "currencies": {
+        "normal": "\/home\/unisoft\/Local Sites\/smart-elctronics-ltd\/app\/public\/wp-content\/uploads\/wpo_wcpdf_c155e44d09dda407a5eaa4588fa55947\/fonts\/currencies",
+        "bold": "\/home\/unisoft\/Local Sites\/smart-elctronics-ltd\/app\/public\/wp-content\/uploads\/wpo_wcpdf_c155e44d09dda407a5eaa4588fa55947\/fonts\/currencies",
+        "italic": "\/home\/unisoft\/Local Sites\/smart-elctronics-ltd\/app\/public\/wp-content\/uploads\/wpo_wcpdf_c155e44d09dda407a5eaa4588fa55947\/fonts\/currencies",
+        "bold_italic": "\/home\/unisoft\/Local Sites\/smart-elctronics-ltd\/app\/public\/wp-content\/uploads\/wpo_wcpdf_c155e44d09dda407a5eaa4588fa55947\/fonts\/currencies"
+    }
+}

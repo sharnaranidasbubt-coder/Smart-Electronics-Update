@@ -1,0 +1,18 @@
+#slider-123 .wd-slide {
+	min-height: 280px;
+}
+#slider-123 .wd-nav-pagin-wrap {
+	--wd-autoplay-speed: 20000ms;
+}
+
+@media (max-width: 1024px) {
+	#slider-123 .wd-slide {
+		min-height: 280px;
+	}
+}
+
+@media (max-width: 768px) {
+	#slider-123 .wd-slide {
+		min-height: 280px;
+	}
+}

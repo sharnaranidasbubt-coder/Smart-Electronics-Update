@@ -1,0 +1,6 @@
+2026-03-09T06:17:51+00:00 CRITICAL Unable to create folder /home/unisoft/Local Sites/smart-elctronics-ltd/app/public/wp-content/uploads/wpo_wcpdf/attachments/
+2026-03-09T06:18:55+00:00 INFO Template setting migrated from /home/unisoft/Local Sites/smart-elctronics-ltd/app/public/wp-content/plugins/woocommerce-pdf-invoices-packing-slips/templates/Simple to default/Simple
+2026-03-09T06:18:56+00:00 CRITICAL WPO\IPS\Documents\SequentialNumberStore::init: Table 'local.wp_wcpdf_invoice_number' doesn't exist
+2026-03-09T06:18:56+00:00 CRITICAL WPO\IPS\Documents\SequentialNumberStore::get_next: Table 'local.wp_wcpdf_invoice_number' doesn't exist
+2026-03-09T06:59:12+00:00 CRITICAL WPO\IPS\Documents\SequentialNumberStore::init: Table 'local.wp_wcpdf_packing_slip_number' doesn't exist
+2026-03-09T06:59:12+00:00 CRITICAL WPO\IPS\Documents\SequentialNumberStore::get_next: Table 'local.wp_wcpdf_packing_slip_number' doesn't exist

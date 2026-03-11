@@ -1,0 +1,50 @@
+[05-Mar-2026 08:31:58 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/unisoft/Local Sites/smart-elctronics-ltd/app/public/wp-content/plugins/wc-sslcommerz-easycheckout/lib/sslcommerz-class.php on line 256
+[05-Mar-2026 08:33:59 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/unisoft/Local Sites/smart-elctronics-ltd/app/public/wp-content/plugins/wc-sslcommerz-easycheckout/lib/sslcommerz-class.php on line 256
+[05-Mar-2026 09:49:11 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/unisoft/Local Sites/smart-elctronics-ltd/app/public/wp-content/plugins/wc-sslcommerz-easycheckout/lib/sslcommerz-class.php on line 256
+[07-Mar-2026 15:13:21 UTC] PHP Warning:  Array to string conversion in /home/unisoft/Local Sites/smart-elctronics-ltd/app/public/wp-includes/class-wp-block.php on line 599
+[07-Mar-2026 15:13:27 UTC] PHP Warning:  Array to string conversion in /home/unisoft/Local Sites/smart-elctronics-ltd/app/public/wp-includes/class-wp-block.php on line 599
+[07-Mar-2026 15:25:19 UTC] PHP Warning:  Array to string conversion in /home/unisoft/Local Sites/smart-elctronics-ltd/app/public/wp-content/themes/woodmart/inc/integrations/gutenberg/src/blocks/products-tabs/products-tabs-products/render.php on line 80
+[07-Mar-2026 15:25:58 UTC] PHP Warning:  Array to string conversion in /home/unisoft/Local Sites/smart-elctronics-ltd/app/public/wp-content/themes/woodmart/inc/integrations/gutenberg/src/blocks/products-tabs/products-tabs-products/render.php on line 80
+[07-Mar-2026 15:34:29 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_gallery_image_ids() on bool in /home/unisoft/Local Sites/smart-elctronics-ltd/app/public/wp-content/plugins/elementor/modules/ai/module.php:351
+Stack trace:
+#0 /home/unisoft/Local Sites/smart-elctronics-ltd/app/public/wp-includes/class-wp-hook.php(341): Elementor\Modules\Ai\Module->get_product_images_ajax('')
+#1 /home/unisoft/Local Sites/smart-elctronics-ltd/app/public/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters('', Array)
+#2 /home/unisoft/Local Sites/smart-elctronics-ltd/app/public/wp-includes/plugin.php(522): WP_Hook->do_action(Array)
+#3 /home/unisoft/Local Sites/smart-elctronics-ltd/app/public/wp-admin/admin-ajax.php(192): do_action('wp_ajax_element...')
+#4 {main}
+  thrown in /home/unisoft/Local Sites/smart-elctronics-ltd/app/public/wp-content/plugins/elementor/modules/ai/module.php on line 351
+[07-Mar-2026 15:35:02 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_gallery_image_ids() on bool in /home/unisoft/Local Sites/smart-elctronics-ltd/app/public/wp-content/plugins/elementor/modules/ai/module.php:351
+Stack trace:
+#0 /home/unisoft/Local Sites/smart-elctronics-ltd/app/public/wp-includes/class-wp-hook.php(341): Elementor\Modules\Ai\Module->get_product_images_ajax('')
+#1 /home/unisoft/Local Sites/smart-elctronics-ltd/app/public/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters('', Array)
+#2 /home/unisoft/Local Sites/smart-elctronics-ltd/app/public/wp-includes/plugin.php(522): WP_Hook->do_action(Array)
+#3 /home/unisoft/Local Sites/smart-elctronics-ltd/app/public/wp-admin/admin-ajax.php(192): do_action('wp_ajax_element...')
+#4 {main}
+  thrown in /home/unisoft/Local Sites/smart-elctronics-ltd/app/public/wp-content/plugins/elementor/modules/ai/module.php on line 351
+[07-Mar-2026 15:41:29 UTC] PHP Warning:  Array to string conversion in /home/unisoft/Local Sites/smart-elctronics-ltd/app/public/wp-content/themes/woodmart/inc/integrations/gutenberg/src/blocks/products-tabs/products-tabs-products/render.php on line 80
+[07-Mar-2026 15:41:36 UTC] PHP Warning:  Array to string conversion in /home/unisoft/Local Sites/smart-elctronics-ltd/app/public/wp-content/themes/woodmart/inc/integrations/gutenberg/src/blocks/products-tabs/products-tabs-products/render.php on line 80
+[07-Mar-2026 15:49:34 UTC] PHP Warning:  Array to string conversion in /home/unisoft/Local Sites/smart-elctronics-ltd/app/public/wp-content/themes/woodmart/inc/integrations/gutenberg/src/blocks/products-tabs/products-tabs-products/render.php on line 80
+[07-Mar-2026 15:50:35 UTC] PHP Warning:  Array to string conversion in /home/unisoft/Local Sites/smart-elctronics-ltd/app/public/wp-content/themes/woodmart/inc/integrations/gutenberg/src/blocks/products-tabs/products-tabs-products/render.php on line 80
+[07-Mar-2026 15:54:37 UTC] PHP Warning:  Array to string conversion in /home/unisoft/Local Sites/smart-elctronics-ltd/app/public/wp-includes/class-wp-block.php on line 599
+[07-Mar-2026 15:54:46 UTC] PHP Warning:  Array to string conversion in /home/unisoft/Local Sites/smart-elctronics-ltd/app/public/wp-includes/class-wp-block.php on line 599
+[07-Mar-2026 15:55:43 UTC] PHP Warning:  Array to string conversion in /home/unisoft/Local Sites/smart-elctronics-ltd/app/public/wp-includes/class-wp-block.php on line 599
+[07-Mar-2026 15:55:59 UTC] PHP Warning:  Array to string conversion in /home/unisoft/Local Sites/smart-elctronics-ltd/app/public/wp-includes/class-wp-block.php on line 599
+[07-Mar-2026 15:56:10 UTC] PHP Warning:  Array to string conversion in /home/unisoft/Local Sites/smart-elctronics-ltd/app/public/wp-includes/class-wp-block.php on line 599
+[07-Mar-2026 15:57:19 UTC] PHP Warning:  Array to string conversion in /home/unisoft/Local Sites/smart-elctronics-ltd/app/public/wp-includes/class-wp-block.php on line 599
+[07-Mar-2026 15:57:31 UTC] PHP Warning:  Array to string conversion in /home/unisoft/Local Sites/smart-elctronics-ltd/app/public/wp-includes/class-wp-block.php on line 599
+[07-Mar-2026 15:57:43 UTC] PHP Warning:  Array to string conversion in /home/unisoft/Local Sites/smart-elctronics-ltd/app/public/wp-includes/class-wp-block.php on line 599
+[07-Mar-2026 15:58:30 UTC] PHP Warning:  Array to string conversion in /home/unisoft/Local Sites/smart-elctronics-ltd/app/public/wp-includes/class-wp-block.php on line 599
+[07-Mar-2026 15:58:38 UTC] PHP Warning:  Array to string conversion in /home/unisoft/Local Sites/smart-elctronics-ltd/app/public/wp-includes/class-wp-block.php on line 599
+[07-Mar-2026 15:58:52 UTC] PHP Warning:  Array to string conversion in /home/unisoft/Local Sites/smart-elctronics-ltd/app/public/wp-includes/class-wp-block.php on line 599
+[07-Mar-2026 15:58:56 UTC] PHP Warning:  Array to string conversion in /home/unisoft/Local Sites/smart-elctronics-ltd/app/public/wp-includes/class-wp-block.php on line 599
+[07-Mar-2026 15:59:07 UTC] PHP Warning:  Array to string conversion in /home/unisoft/Local Sites/smart-elctronics-ltd/app/public/wp-includes/class-wp-block.php on line 599
+[07-Mar-2026 15:59:11 UTC] PHP Warning:  Array to string conversion in /home/unisoft/Local Sites/smart-elctronics-ltd/app/public/wp-includes/class-wp-block.php on line 599
+[08-Mar-2026 09:36:11 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/unisoft/Local Sites/smart-elctronics-ltd/app/public/wp-content/plugins/wc-sslcommerz-easycheckout/lib/sslcommerz-class.php on line 256
+[09-Mar-2026 04:17:15 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_gallery_image_ids() on bool in /home/unisoft/Local Sites/smart-elctronics-ltd/app/public/wp-content/plugins/elementor/modules/ai/module.php:351
+Stack trace:
+#0 /home/unisoft/Local Sites/smart-elctronics-ltd/app/public/wp-includes/class-wp-hook.php(341): Elementor\Modules\Ai\Module->get_product_images_ajax('')
+#1 /home/unisoft/Local Sites/smart-elctronics-ltd/app/public/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters('', Array)
+#2 /home/unisoft/Local Sites/smart-elctronics-ltd/app/public/wp-includes/plugin.php(522): WP_Hook->do_action(Array)
+#3 /home/unisoft/Local Sites/smart-elctronics-ltd/app/public/wp-admin/admin-ajax.php(192): do_action('wp_ajax_element...')
+#4 {main}
+  thrown in /home/unisoft/Local Sites/smart-elctronics-ltd/app/public/wp-content/plugins/elementor/modules/ai/module.php on line 351
