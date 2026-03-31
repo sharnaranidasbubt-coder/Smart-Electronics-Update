@@ -73,6 +73,10 @@ $table_prefix = 'wp_';
 
 /* Add any custom values between this line and the "stop editing" line. */
 
+// Fix site URL for Docker port 4000
+define( 'WP_HOME', 'http://localhost:4000' );
+define( 'WP_SITEURL', 'http://localhost:4000' );
+
 
 
 /**

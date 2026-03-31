@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Sony Smart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --wd-primary: #1e73be;
+            --wd-secondary: #ff6b35;
+            --wd-accent: #4CAF50;
+            --wd-text-dark: #222222;
+            --wd-text-light: #666666;
+            --wd-bg-light: #f8f8f8;
+            --wd-bg-white: #ffffff;
+            --wd-bg-dark: #1a1a1a;
+            --wd-border: #e5e5e5;
+            --wd-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            --wd-radius: 4px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--wd-text-dark);
+            background: var(--wd-bg-white);
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: var(--wd-bg-dark);
+            padding: 80px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 700;
+            color: white;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .hero-subtitle {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 30px;
+        }
+
+        .hero-line {
+            width: 60px;
+            height: 3px;
+            background: var(--wd-primary);
+            margin: 0 auto;
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 100px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about-content {
+            padding: 0;
+        }
+
+        .section-tag {
+            display: inline-block;
+            background: var(--wd-primary);
+            color: white;
+            padding: 8px 24px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+            border-radius: 30px;
+        }
+
+        .about-title {
+            font-size: clamp(2.2rem, 4vw, 3rem);
+            font-weight: 700;
+            color: var(--wd-text-dark);
+            margin-bottom: 30px;
+            line-height: 1.3;
+        }
+
+        .about-text {
+            color: var(--wd-text-light);
+            font-size: 1.1rem;
+            line-height: 1.9;
+            margin-bottom: 0;
+            max-width: 750px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .about-divider {
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--wd-primary) 0%, var(--wd-accent) 100%);
+            margin: 40px auto;
+            border-radius: 3px;
+        }
+
+        .about-features {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            list-style: none;
+            margin-top: 50px;
+        }
+
+        .about-features li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--wd-text-dark);
+            font-size: 0.95rem;
+            font-weight: 600;
+            padding: 15px 25px;
+            background: var(--wd-bg-white);
+            border-radius: 50px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--wd-border);
+        }
+
+        .about-features li i {
+            color: var(--wd-accent);
+            font-size: 1rem;
+        }
+
+        /* Stats Section */
+        .stats-section {
+            background: var(--wd-bg-light);
+            padding: 60px 20px;
+        }
+
+        .stats-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            text-align: center;
+        }
+
+        .stat-item {
+            padding: 30px 20px;
+            background: var(--wd-bg-white);
+            border-radius: var(--wd-radius);
+            box-shadow: var(--wd-shadow);
+            transition: all 0.3s ease;
+        }
+
+        .stat-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .stat-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--wd-primary) 0%, var(--wd-accent) 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--wd-primary);
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            font-size: 0.95rem;
+            color: var(--wd-text-light);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+
+        /* Features Section */
+        .features-section {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 3vw, 2.5rem);
+            font-weight: 700;
+            color: var(--wd-text-dark);
+            margin-bottom: 15px;
+        }
+
+        .section-description {
+            font-size: 1.1rem;
+            color: var(--wd-text-light);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: var(--wd-bg-white);
+            padding: 40px 30px;
+            border-radius: var(--wd-radius);
+            box-shadow: var(--wd-shadow);
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid var(--wd-border);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+            border-color: var(--wd-primary);
+        }
+
+        .feature-icon-wrapper {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, rgba(30, 115, 190, 0.1) 0%, rgba(76, 175, 80, 0.1) 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+        }
+
+        .feature-icon-wrapper i {
+            font-size: 2rem;
+            color: var(--wd-primary);
+        }
+
+        .feature-card h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--wd-text-dark);
+            margin-bottom: 15px;
+        }
+
+        .feature-card p {
+            color: var(--wd-text-light);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* Mission Section */
+        .mission-section {
+            background: linear-gradient(135deg, var(--wd-bg-dark) 0%, #2d2d2d 100%);
+            padding: 80px 20px;
+            color: white;
+        }
+
+        .mission-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .mission-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .mission-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            padding: 45px 35px;
+            border-radius: var(--wd-radius);
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .mission-card:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-5px);
+        }
+
+        .mission-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--wd-primary) 0%, var(--wd-accent) 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            font-size: 1.8rem;
+            color: white;
+        }
+
+        .mission-card h3 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .mission-card p {
+            font-size: 1rem;
+            line-height: 1.7;
+            opacity: 0.9;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--wd-primary) 0%, var(--wd-accent) 100%);
+            padding: 80px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cta-title {
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .cta-text {
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            opacity: 0.95;
+        }
+
+        .btn {
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-white {
+            background: white;
+            color: var(--wd-primary);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-white:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .animate-on-scroll.animated {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .mission-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .about-features {
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 60px 20px;
+            }
+
+            .about-section,
+            .features-section {
+                padding: 60px 20px;
+            }
+
+            .about-features {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+
+            .features-grid,
+            .mission-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stat-item {
+                padding: 25px 15px;
+            }
+
+            .stat-number {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .about-title,
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .feature-card,
+            .mission-card {
+                padding: 35px 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">About Us</h1>
+            <p class="hero-subtitle">Powering Your Smart Lifestyle</p>
+            <div class="hero-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="about-content animate-on-scroll">
+            <span class="section-tag">Who We Are</span>
+            <h2 class="about-title">Your Trusted Partner in Premium Smart Electronics</h2>
+            <p class="about-text">
+                At Sony Smart, we are committed to delivering exceptional quality electronics and innovative smart solutions that transform the way you live and work. Our dedication to excellence ensures that every product we offer meets the highest standards of performance and reliability, while our customer-first approach guarantees a seamless shopping experience from start to finish.
+            </p>
+            <div class="about-divider"></div>
+            <ul class="about-features">
+                <li><i class="fas fa-gem"></i> Premium Quality</li>
+                <li><i class="fas fa-award"></i> 15+ Years Excellence</li>
+                <li><i class="fas fa-headset"></i> Expert Support</li>
+                <li><i class="fas fa-shield-alt"></i> 100% Genuine</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="stats-container">
+            <div class="stats-grid">
+                <div class="stat-item animate-on-scroll">
+                    <div class="stat-icon">
+                        <i class="fas fa-box"></i>
+                    </div>
+                    <span class="stat-number" data-count="2000">2000+</span>
+                    <span class="stat-label">Products</span>
+                </div>
+                <div class="stat-item animate-on-scroll">
+                    <div class="stat-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <span class="stat-number" data-count="200">200+</span>
+                    <span class="stat-label">Dealers</span>
+                </div>
+                <div class="stat-item animate-on-scroll">
+                    <div class="stat-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="stat-number" data-count="50">50+</span>
+                    <span class="stat-label">Brands</span>
+                </div>
+                <div class="stat-item animate-on-scroll">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <span class="stat-number" data-count="15000">15K+</span>
+                    <span class="stat-label">Customers</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="section-header animate-on-scroll">
+            <h2 class="section-title">Why Choose Us</h2>
+            <p class="section-description">Discover the advantages that make Sony Smart the preferred choice for smart electronics</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card animate-on-scroll">
+                <div class="feature-icon-wrapper">
+                    <i class="fas fa-microchip"></i>
+                </div>
+                <h3>Latest Technology</h3>
+                <p>Stay ahead with the newest products and innovations from leading brands worldwide.</p>
+            </div>
+            <div class="feature-card animate-on-scroll">
+                <div class="feature-icon-wrapper">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>100% Reliable</h3>
+                <p>All products are genuine and come with manufacturer warranty for peace of mind.</p>
+            </div>
+            <div class="feature-card animate-on-scroll">
+                <div class="feature-icon-wrapper">
+                    <i class="fas fa-shipping-fast"></i>
+                </div>
+                <h3>Fast Delivery</h3>
+                <p>Quick and secure delivery to your doorstep with real-time order tracking.</p>
+            </div>
+            <div class="feature-card animate-on-scroll">
+                <div class="feature-icon-wrapper">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h3>24/7 Support</h3>
+                <p>Our dedicated support team is available round the clock to assist you.</p>
+            </div>
+            <div class="feature-card animate-on-scroll">
+                <div class="feature-icon-wrapper">
+                    <i class="fas fa-dollar-sign"></i>
+                </div>
+                <h3>Best Price</h3>
+                <p>Competitive pricing with regular promotions and price match guarantee.</p>
+            </div>
+            <div class="feature-card animate-on-scroll">
+                <div class="feature-icon-wrapper">
+                    <i class="fas fa-undo"></i>
+                </div>
+                <h3>Easy Returns</h3>
+                <p>Hassle-free return policy with customer satisfaction as our top priority.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission-section">
+        <div class="mission-container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title" style="color: white;">Our Foundation</h2>
+                <p class="section-description" style="color: rgba(255,255,255,0.8);">The values that drive everything we do</p>
+            </div>
+            <div class="mission-grid">
+                <div class="mission-card animate-on-scroll">
+                    <div class="mission-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Our Mission</h3>
+                    <p>To provide cutting-edge electronics and smart solutions that enhance everyday life, making technology accessible and affordable for everyone.</p>
+                </div>
+                <div class="mission-card animate-on-scroll">
+                    <div class="mission-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Our Vision</h3>
+                    <p>To be the most trusted electronics retailer, known for excellence, innovation, and customer-centric service in the smart technology market.</p>
+                </div>
+                <div class="mission-card animate-on-scroll">
+                    <div class="mission-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Our Values</h3>
+                    <p>Integrity, quality, innovation, and customer satisfaction drive everything we do. Building lasting relationships through trust and excellence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-content animate-on-scroll">
+            <h2 class="cta-title">Ready to Experience the Sony Smart Difference?</h2>
+            <p class="cta-text">Join thousands of satisfied customers and discover premium electronics with exceptional service.</p>
+            <a href="#" class="btn btn-white">Shop Now</a>
+        </div>
+    </section>
+
+    <script>
+        // Scroll Animation
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.classList.add('animated');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+
+        // Counter Animation
+        function animateCounters() {
+            const counters = document.querySelectorAll('.stat-number');
+
+            counters.forEach(counter => {
+                const target = parseInt(counter.getAttribute('data-count'));
+                const duration = 2000;
+                const step = target / (duration / 16);
+                let current = 0;
+
+                const updateCounter = () => {
+                    current += step;
+                    if (current < target) {
+                        if (target >= 1000) {
+                            counter.textContent = Math.floor(current / 1000) + 'K+';
+                        } else {
+                            counter.textContent = Math.floor(current) + '+';
+                        }
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        if (target >= 1000) {
+                            counter.textContent = (target / 1000) + 'K+';
+                        } else {
+                            counter.textContent = target + '+';
+                        }
+                    }
+                };
+
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            updateCounter();
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.5 });
+
+                observer.observe(counter);
+            });
+        }
+
+        animateCounters();
+    </script>
+</body>
+</html>

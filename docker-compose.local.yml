@@ -1,0 +1,69 @@
+services:
+  # MySQL Database
+  mysql:
+    image: mysql:8.0
+    container_name: smart-electronics-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: local
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./app/sql:/docker-entrypoint-initdb.d:ro
+    networks:
+      - wordpress-network
+    ports:
+      - "4090:3306"
+    command: --default-authentication-plugin=mysql_native_password
+
+  # WordPress with Apache (no nginx needed)
+  wordpress:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: sharna/smart-electronics:latest
+    container_name: smart-electronics-wordpress
+    restart: unless-stopped
+    depends_on:
+      - mysql
+    environment:
+      WORDPRESS_DB_HOST: mysql:3306
+      WORDPRESS_DB_NAME: local
+      WORDPRESS_DB_USER: root
+      WORDPRESS_DB_PASSWORD: root
+    volumes:
+      # Local mounts - changes reflect immediately
+      - ./app/public:/var/www/html:cached
+      - ./conf/php/php.ini:/usr/local/etc/php/conf.d/custom.ini:ro
+    networks:
+      - wordpress-network
+    ports:
+      - "4000:80"
+
+  # phpMyAdmin
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: smart-electronics-phpmyadmin
+    restart: unless-stopped
+    depends_on:
+      - mysql
+    ports:
+      - "4001:80"
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+      PMA_USER: root
+      PMA_PASSWORD: root
+      UPLOAD_LIMIT: 256M
+    networks:
+      - wordpress-network
+
+networks:
+  wordpress-network:
+    driver: bridge
+
+volumes:
+  mysql_data:
+    driver: local
