@@ -1,5 +1,6 @@
+version: "3.9"
+
 services:
-  # MySQL Database
   mysql:
     image: mysql:8.0
     container_name: smart-electronics-mysql
@@ -15,30 +16,27 @@ services:
     networks:
       - wordpress-network
     ports:
-      - "4090:3306"
+      - "5001:3306"
     command: --default-authentication-plugin=mysql_native_password
 
-  # WordPress with Apache
   wordpress:
-    image: wordpress:6.7-php8.2-apache
+    image: ranidas26/sonysmartelctronics:v1
     container_name: smart-electronics-wordpress
     restart: unless-stopped
     depends_on:
       - mysql
     ports:
-      - "4000:80"
+      - "5000:80"
     environment:
       WORDPRESS_DB_HOST: mysql:3306
       WORDPRESS_DB_NAME: local
       WORDPRESS_DB_USER: root
       WORDPRESS_DB_PASSWORD: root
-    volumes:
-      - ./app/public:/var/www/html:cached
-      - ./conf/php/php.ini:/usr/local/etc/php/conf.d/custom.ini:ro
     networks:
       - wordpress-network
+    volumes:
+      - ./app/public/wp-content:/var/www/html/wp-content
 
-  # phpMyAdmin
   phpmyadmin:
     image: phpmyadmin:latest
     container_name: smart-electronics-phpmyadmin
@@ -46,7 +44,7 @@ services:
     depends_on:
       - mysql
     ports:
-      - "4001:80"
+      - "5002:80"
     environment:
       PMA_HOST: mysql
       PMA_PORT: 3306
